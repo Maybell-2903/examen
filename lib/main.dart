@@ -66,6 +66,40 @@ class MyWrapRichText extends StatelessWidget {
               ],
             ),
           ),
+          RichText(
+            text: TextSpan(
+              style: DefaultTextStyle.of(context).style,
+              children: <TextSpan>[
+                TextSpan(
+                  text:
+                      'los "Degradados" añaden profundidad y atractivo visual a los diseños',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                TextSpan(
+                  text: 'RichText',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Color.fromARGB(255, 110, 242, 3),
+                  ),
+                ),
+                TextSpan(
+                  text: ' Ejemplo ',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Color.fromARGB(255, 255, 238, 2),
+                  ),
+                ),
+                TextSpan(
+                  text: ' Ejemplo 2 ',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Color.fromARGB(255, 42, 0, 251),
+                  ),
+                ),
+                TextSpan(text: ' en Flutter.'),
+              ],
+            ),
+          ),
         ],
       ),
     );
