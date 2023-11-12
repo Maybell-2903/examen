@@ -40,6 +40,34 @@ class MyWrapRichText extends StatelessWidget {
           ],
         ),
       ),
+      child: Wrap(
+        spacing: 10.0, // Espaciado horizontal entre elementos
+        runSpacing: 10.0, // Espaciado vertical entre filas
+        children: <Widget>[
+          RichText(
+            text: TextSpan(
+              style: DefaultTextStyle.of(context).style,
+              children: <TextSpan>[
+                TextSpan(
+                  text:
+                      'Wrap" ofrece flexibilidad en la disposición de elementos en pantalla, ',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                TextSpan(
+                    text:
+                        'RichText" enriquece la presentación de contenido al permitir el formato de texto con estilos y elementos visuales  '),
+                TextSpan(
+                  text: 'RichText',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    color: Color.fromARGB(255, 245, 2, 2),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
